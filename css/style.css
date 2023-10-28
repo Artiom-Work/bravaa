@@ -1155,233 +1155,242 @@ button {
 	.subscription__title::after {
 		right: -100px;
 	}
-}
-
-@media(max-width:565px) {
-	.top {
-		background: linear-gradient(179deg, #04040C -9.42%, #01050D -9.42%, #01040A 8.93%, #01050D 15.96%, #191E25 55.51%, #1C2C40 85.83%, #232F3F 95.71%, #141B2C 112.17%);
-		padding: 23px 0 30px;
-	}
-
-	.top__promo-inner {
-		padding: 30px 0 34px;
-	}
-
-	.top__promo-info {
-		max-width: 300px;
-		margin: 0 auto 40px;
-	}
-
-	.top__promo-title {
-		margin: 0 auto 9px;
-		max-width: 300px;
-		font-size: 36px;
-		line-height: 50px;
-	}
-
-	.top__promo-descrption {
-		margin: 0 auto 26px;
-		max-width: 300px;
-	}
-
-	.top__promo-possibilities-list {
-		margin: 0 auto;
-		max-width: 300px;
-		justify-content: start;
-		gap: 25px;
-	}
-
-	.top__promo-possibilities-list::after {
-		display: none;
-	}
-
-	.logos__list {
-		flex-direction: column;
-	}
-
-	.programm__title {
-		margin: 20px auto 30px;
-	}
-
-	.programm__title::after {
-		display: none;
-	}
-
-	.promo__desc {
-		align-items: center;
-		flex-direction: column;
-	}
-
-	.pricing-plans__list-slider-wrp {
-		overflow-x: scroll;
-		scroll-behavior: smooth;
-		scroll-snap-type: x mandatory;
-		padding: 0 0 20px 0;
-	}
-
-	.pricing-plans__list {
-		width: 836px;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		gap: 10px;
-	}
-
-	.pricing-plans__item {
-		scroll-snap-align: center;
-	}
-
-	.pricing-plans__list-slider-wrp::-webkit-scrollbar {
-		height: 3px;
-		scroll-padding-right: 100px;
-	}
-
-	.pricing-plans__list-slider-wrp::-webkit-scrollbar-thumb,
-	.programm__card-slide-wrp::-webkit-scrollbar-thumb {
-		background-color: #1C2C40;
-	}
-
-	.reviews::before {
-		min-height: 350px;
-	}
-
-	.subscription.center {
-		padding: 40px 10px;
-		margin: 30px auto 0;
-	}
-
-	.subscription::before {
-		left: 10px;
-	}
-
-	.subscription::after {
-		right: 10px;
-	}
-
-	.subscription__title {
-		max-width: 260px;
-		text-align: center;
-		line-height: 30px;
-		font-size: 30px;
-		margin: 0 0 11px 0;
-	}
-
-	.subscription__title::after {
-		width: 50px;
-		height: 50px;
-		right: -10px;
-		top: 10px
-	}
-
-	.subscription__txt {
-		max-width: 260px;
-	}
 
 	.footer {
-		flex-direction: column;
-		padding: 10px;
-		align-items: center;
+		padding: 40px 10px 43px;
 		gap: 20px;
 	}
 
-	.footer__icons {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 10px;
-		min-height: 75px;
+	@media(max-width:565px) {
+		.top {
+			background: linear-gradient(179deg, #04040C -9.42%, #01050D -9.42%, #01040A 8.93%, #01050D 15.96%, #191E25 55.51%, #1C2C40 85.83%, #232F3F 95.71%, #141B2C 112.17%);
+			padding: 23px 0 30px;
+		}
+
+		.nav__list {
+			width: 75vw;
+			min-height: 34vh;
+		}
+
+		.top__promo-inner {
+			padding: 30px 0 34px;
+		}
+
+		.top__promo-info {
+			max-width: 300px;
+			margin: 0 auto 40px;
+		}
+
+		.top__promo-title {
+			margin: 0 auto 9px;
+			max-width: 300px;
+			font-size: 36px;
+			line-height: 50px;
+		}
+
+		.top__promo-descrption {
+			margin: 0 auto 26px;
+			max-width: 300px;
+		}
+
+		.top__promo-possibilities-list {
+			margin: 0 auto;
+			max-width: 300px;
+			justify-content: start;
+			gap: 25px;
+		}
+
+		.top__promo-possibilities-list::after {
+			display: none;
+		}
+
+		.logos__list {
+			flex-direction: column;
+		}
+
+		.programm__title {
+			margin: 20px auto 30px;
+		}
+
+		.programm__title::after {
+			display: none;
+		}
+
+		.promo__desc {
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.pricing-plans__list-slider-wrp {
+			overflow-x: scroll;
+			scroll-behavior: smooth;
+			scroll-snap-type: x mandatory;
+			padding: 0 0 20px 0;
+		}
+
+		.pricing-plans__list {
+			width: 836px;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			gap: 10px;
+		}
+
+		.pricing-plans__item {
+			scroll-snap-align: center;
+		}
+
+		.pricing-plans__list-slider-wrp::-webkit-scrollbar {
+			height: 3px;
+			scroll-padding-right: 100px;
+		}
+
+		.pricing-plans__list-slider-wrp::-webkit-scrollbar-thumb,
+		.programm__card-slide-wrp::-webkit-scrollbar-thumb {
+			background-color: #1C2C40;
+		}
+
+		.reviews::before {
+			min-height: 350px;
+		}
+
+		.subscription.center {
+			padding: 40px 10px;
+			margin: 30px auto 0;
+		}
+
+		.subscription::before {
+			left: 10px;
+		}
+
+		.subscription::after {
+			right: 10px;
+		}
+
+		.subscription__title {
+			max-width: 260px;
+			text-align: center;
+			line-height: 30px;
+			font-size: 30px;
+			margin: 0 0 11px 0;
+		}
+
+		.subscription__title::after {
+			width: 50px;
+			height: 50px;
+			right: -10px;
+			top: 10px
+		}
+
+		.subscription__txt {
+			max-width: 260px;
+		}
+
+		.footer {
+			flex-direction: column;
+			padding: 10px;
+			align-items: center;
+			gap: 20px;
+		}
+
+		.footer__icons {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+			min-height: 75px;
+		}
+
+		.footer .logo,
+		.footer__txt {
+			max-width: 300px;
+			width: 100%;
+			text-align: center;
+			margin: 0;
+			min-height: 10px;
+		}
+
+		.footer__social-list {
+			max-width: 150px;
+			justify-content: space-evenly;
+		}
+
+		.footer__nav {
+			margin: 10px 0 0;
+			flex-wrap: wrap;
+		}
 	}
 
-	.footer .logo,
-	.footer__txt {
-		max-width: 300px;
-		width: 100%;
-		text-align: center;
-		margin: 0;
-		min-height: 10px;
-	}
+	@media(max-width:450px) {
+		.programm.center {
+			padding: 0;
+			max-width: 450px;
+		}
 
-	.footer__social-list {
-		max-width: 150px;
-		justify-content: space-evenly;
-	}
+		.programm__title {
+			font-size: 26px;
+			margin: 20px auto 10px;
+		}
 
-	.footer__nav {
-		margin: 10px 0 0;
-		flex-wrap: wrap;
-	}
-}
+		.programm__card-slide-wrp {
+			overflow-x: scroll;
+			scroll-behavior: smooth;
+			scroll-snap-type: x mandatory;
+		}
 
-@media(max-width:450px) {
-	.programm.center {
-		padding: 0;
-		max-width: 450px;
-	}
+		.programm__card-list {
+			flex-direction: row;
+			flex-wrap: nowrap;
+			height: 300px;
+			width: 891px;
+		}
 
-	.programm__title {
-		font-size: 26px;
-		margin: 20px auto 10px;
-	}
+		.programm__card-slide-wrp::-webkit-scrollbar {
+			height: 3px;
+			scroll-padding-right: 100px;
+		}
 
-	.programm__card-slide-wrp {
-		overflow-x: scroll;
-		scroll-behavior: smooth;
-		scroll-snap-type: x mandatory;
-	}
+		.programm__card-item {
+			scroll-snap-align: center;
+		}
 
-	.programm__card-list {
-		flex-direction: row;
-		flex-wrap: nowrap;
-		height: 300px;
-		width: 891px;
-	}
+		.programm__card-item a {
+			width: 197px;
+		}
 
-	.programm__card-slide-wrp::-webkit-scrollbar {
-		height: 3px;
-		scroll-padding-right: 100px;
-	}
+		.promo__info-wrp {
+			max-width: 300px;
+			margin: 20px 0 0;
+			flex-shrink: 1;
+		}
 
-	.programm__card-item {
-		scroll-snap-align: center;
-	}
+		.pricing-plans__txt {
+			max-width: 275px;
+		}
 
-	.programm__card-item a {
-		width: 197px;
-	}
+		.reviews__heading::after,
+		.reviews__txt {
+			display: none;
+		}
 
-	.promo__info-wrp {
-		max-width: 300px;
-		margin: 20px 0 0;
-		flex-shrink: 1;
-	}
+		.reviews::before {
+			min-height: 300px;
+			top: 100px;
+		}
 
-	.pricing-plans__txt {
-		max-width: 275px;
-	}
+		.reviews__title {
+			max-width: 275px;
+			font-size: 26px;
+		}
 
-	.reviews__heading::after,
-	.reviews__txt {
-		display: none;
-	}
+		.subscription__form {
+			max-width: 300px;
+		}
 
-	.reviews::before {
-		min-height: 300px;
-		top: 100px;
+		.footer__nav {
+			max-width: 200px;
+			align-items: flex-start;
+			row-gap: 30px;
+			margin: 10px 0 0;
+			flex-wrap: wrap;
+		}
 	}
-
-	.reviews__title {
-		max-width: 275px;
-		font-size: 26px;
-	}
-
-	.subscription__form {
-		max-width: 300px;
-	}
-
-	.footer__nav {
-		max-width: 200px;
-		align-items: flex-start;
-		row-gap: 30px;
-		margin: 10px 0 0;
-		flex-wrap: wrap;
-	}
-}
