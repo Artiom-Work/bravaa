@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Poppins Regular';
+	src: url(../fonts/poppins-regular-webfont.woff2), url(../fonts/poppins-regular-webfont.woff);
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins Medium';
+	src: url(../fonts/poppins-medium-webfont.woff2), url(../fonts/poppins-medium-webfont.woff);
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins SemiBold';
+	src: url(../fonts/poppins-semibold-webfont.woff2), url(../fonts/poppins-semibold-webfont.woff);
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'Poppins bold';
+	src: url(../fonts/poppins-bold-webfont.woff2), url(../fonts/poppins-bold-webfont.woff);
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Playfair Display Bold';
+	src: url(../fonts/playfair-display-bold-webfont.woff2), url(../fonts/playfair-display-bold-webfont.woff);
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Playfair Display Black';
+	src: url(../fonts/playfair-display-black-webfont.woff2), url(../fonts/playfair-display-black-webfont.woff);
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Black';
+	src: url(../fonts/roboto-black-webfont.woff2), url(../fonts/roboto-black-webfont.woff);
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+}

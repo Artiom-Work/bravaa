@@ -1,0 +1,130 @@
+a,
+button {
+	cursor: pointer;
+}
+
+:focus,
+:active,
+a:focus,
+a:active {
+	outline: none;
+}
+
+@media(hover: hover) {
+
+	a:hover,
+	button:hover {
+		opacity: .7;
+	}
+
+	a:active,
+	button:active {
+		opacity: .9;
+		color: #fff;
+	}
+
+	.logo__link:active {
+		opacity: .3;
+	}
+
+	.login-buttons__sign-up:hover {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+
+	.top__promo-buttons-started:hover {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+
+	.top__promo-buttons-started:active {
+		color: #5aba4a;
+		outline: 1px solid #5aba4a;
+		background-color: #fff;
+	}
+
+	.top__promo-buttons-started-watch:hover::before {
+		transform: scale(1.2);
+		opacity: 1;
+	}
+
+	.programm__card-item:hover a {
+		opacity: 1;
+	}
+
+	.programm__card-item:hover {
+		background: #ff6726;
+		transform: scale(1.1);
+	}
+
+	.programm__card-item:active {
+		opacity: .3;
+	}
+
+	.programm__card-item:hover .programm-card__txt {
+		color: #ffe4e2;
+	}
+
+	.programm__card-item:hover .programm-card__link-txt {
+		color: #fff;
+	}
+
+	.promo__gallery-link:hover {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+
+	.promo__gallery-link:active {
+		opacity: .3;
+	}
+
+	.slider-buttons__btn-prev:hover {
+		background: url(../images/main/reviews-slider/slider-button-hover.svg) no-repeat center / contain;
+		transform: scale(1.2) rotate(-90deg);
+		box-shadow: 7px 7px 30px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	.slider-buttons__btn-next:hover {
+		background: url(../images/main/reviews-slider/slider-button-hover.svg) no-repeat center / contain;
+		transform: scale(1.2) rotate(90deg);
+		box-shadow: 7px 7px 30px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	.pricing-plans__item-inner:hover {
+		background: #ff6726;
+		transform: scale(1.1);
+	}
+
+	.pricing-plans__item-inner:hover .pricing-plans__btn {
+		background: #fff;
+		border: none;
+	}
+
+	.pricing-plans__item-inner:active .pricing-plans__btn {
+		background-color: #5aba4a;
+		color: #fff;
+	}
+
+	.pricing-plans__btn:hover {
+		opacity: 1;
+	}
+
+	.subscription__form-btn:hover {
+		transform: scale(1.1);
+		opacity: 1;
+	}
+
+	.subscription__form-btn:active {
+		color: #5aba4a;
+	}
+
+	.footer__social-item:hover {
+		transform: scale(1.2);
+		opacity: 1;
+		background: #ff6726
+	}
+
+	.footer__social-item:active {
+		opacity: .3;
+	}
+}

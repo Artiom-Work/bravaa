@@ -1,0 +1,239 @@
+.reviews__slider-wrp {
+	position: relative;
+	max-width: 969px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 0 3px 80px;
+	box-sizing: border-box;
+	max-width: 969px;
+	width: 100%;
+	min-height: 450px;
+	background: #030712;
+	box-shadow: 8px 8px 41px 0px rgba(23, 23, 23, 0.25);
+}
+
+.reviews__slider-wrp::before {
+	position: absolute;
+	content: '';
+	background: url(../images/main/reviews-slider/dumbbell-shaker.svg) no-repeat center / contain;
+	width: 74px;
+	height: 73px;
+	top: 32px;
+	right: 80px;
+	z-index: 9;
+}
+
+.reviews__slider-wrp::after {
+	content: '';
+	background: url(../images/main/reviews-slider/squares.png) no-repeat center / cover;
+	position: absolute;
+	width: 45px;
+	height: 22px;
+	bottom: 0px;
+	left: 63px;
+	z-index: 9;
+}
+
+.slider {
+	position: relative;
+	max-width: 777px;
+	width: 100%;
+	overflow: hidden;
+	background: #030712;
+}
+
+.slider__line {
+	display: flex;
+	align-items: center;
+	transition: all 1s;
+}
+
+.slider__line-item {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	gap: 25px;
+	caret-color: transparent;
+}
+
+.slider-buttons {
+	position: absolute;
+	max-width: 110px;
+	width: 100%;
+	min-height: 43px;
+	display: flex;
+	justify-content: space-between;
+	top: 382px;
+	left: 419px;
+}
+
+.slider-buttons__btn-prev,
+.slider-buttons__btn-next {
+	background: url(../images/main/reviews-slider/slider-button.svg) no-repeat center / contain;
+	border: none;
+	border-radius: 100%;
+	width: 37px;
+	height: 37px;
+	transition: all 1s;
+	cursor: pointer;
+	caret-color: transparent;
+}
+
+.slider-buttons__btn-prev {
+	transform: rotate(-90deg);
+}
+
+.slider-buttons__btn-next {
+	transform: rotate(90deg);
+}
+
+.slider__line-item-image {
+	max-width: 312px;
+	width: 100%;
+	min-height: 460px;
+	background: url(../images/main/reviews-slider/client-photo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.slider__line-item-info {
+	position: relative;
+	max-width: 357px;
+	width: 100%;
+	margin: 76px 0px 0px;
+}
+
+.slider__line-item-name {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16.5px;
+	line-height: 19px;
+	text-transform: capitalize;
+	color: #fff;
+	margin: 0px 0px 2px;
+}
+
+.slider__line-item-who {
+	display: inline-block;
+	font-size: 11px;
+	line-height: 19px;
+	color: #d4d4d4;
+	margin: 0px 0px 14px;
+}
+
+.rating {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 94px;
+	height: 13.61px;
+	margin: 0 0 13px 0;
+}
+
+.rating__item {
+	display: block;
+	width: 14.46px;
+	height: 14.61px;
+	background: url(../images/main/reviews-slider/reting-star.svg) no-repeat center / cover;
+}
+
+.rating__item_marked {
+	background: url(../images/main/reviews-slider/reting-star-ative.svg) no-repeat center / cover;
+}
+
+.slider__line-item-txt {
+	max-width: 357px;
+	width: 100%;
+	line-height: 19px;
+	letter-spacing: .5px;
+	color: #d4d4d4;
+}
+
+.slider__line-item-info p:first-of-type {
+	margin: 0 0 14px 0;
+}
+
+@media(max-width:767px) {
+	.reviews__slider-wrp::before {
+		width: 60px;
+		right: 40px;
+		top: 45px;
+	}
+
+	.slider__line-item {
+		align-items: center;
+	}
+
+	.slider__line-item-info {
+		margin: 0;
+	}
+
+	.slider__line-item-txt {
+		max-width: 220px;
+	}
+
+	.slider-buttons {
+		left: 10%;
+		top: 90%;
+	}
+}
+
+@media(max-width:565px) {
+	.reviews__slider-wrp {
+		padding: 20px 20px 20px 40px;
+		min-height: 300px;
+	}
+
+	.reviews__slider-wrp::before {
+		display: none;
+	}
+
+	.slider__line-item-image {
+		max-width: 200px;
+		min-height: 300px;
+	}
+
+	.slider__line-item-txt_hidden {
+		display: none;
+	}
+
+	.slider-buttons {
+		top: 80%;
+	}
+}
+
+@media(max-width:420px) {
+	.reviews__slider-wrp {
+		padding: 10px 0 0 10px;
+	}
+
+	.reviews__slider-wrp::after {
+		display: none;
+	}
+}
+
+@media(max-width:350px) {
+	.slider__line-item {
+		flex-direction: column;
+	}
+
+	.slider__line-item-info {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.reviews__title {
+		font-size: 30px;
+	}
+
+	.slider__line-item-txt {
+		max-width: 163px;
+		text-align: center;
+	}
+
+	.slider-buttons {
+		top: 43%;
+		left: 33%;
+	}
+}
