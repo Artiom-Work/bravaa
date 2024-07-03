@@ -37,7 +37,7 @@ button {
 /* ====top==== */
 .top {
 	margin: 0 auto;
-	padding: 23px 0 87px;
+	padding: 23px 0 86px;
 	min-height: 566px;
 	max-width: 969px;
 	width: 100%;
@@ -162,7 +162,7 @@ button {
 /* ====END-top__header==== */
 /* ====section-top__promo==== */
 .top__promo-inner {
-	padding: 92px 0 85px;
+	padding: 92px 0 86px;
 	display: flex;
 	flex-direction: column;
 }
@@ -183,11 +183,11 @@ button {
 }
 
 .top__promo-descrption {
-	max-width: 358px;
+	max-width: 360px;
 	width: 100%;
 	margin: 0 0 26px 0;
 	line-height: 18px;
-	letter-spacing: .4px;
+	letter-spacing: .5px;
 	color: #d4d4d4;
 }
 
@@ -200,7 +200,8 @@ button {
 }
 
 .top__promo-buttons-started {
-	padding: 8.8px 29.09px 9px 27.9px;
+	padding: 9.5px 29.09px 8px 27.9px;
+	letter-spacing: 0.2px;
 	box-sizing: border-box;
 	background: #5aba4a;
 	border: none;
@@ -222,9 +223,11 @@ button {
 	display: block;
 	font-size: 12px;
 	line-height: 20px;
+	letter-spacing: .1px;
 	text-transform: capitalize;
 	color: #fff;
 	position: relative;
+	top: 1px;
 }
 
 .top__promo-buttons-started-watch::before {
@@ -251,33 +254,41 @@ button {
 .top__promo-possibilities-list::after {
 	content: '';
 	width: 138px;
-	height: 129px;
+	height: 130px;
 	background: url(../images/top/calories-image.png) no-repeat;
 	background-size: cover;
 	box-shadow: 14px 14px 34px 0px rgba(0, 0, 0, 0.25);
 	position: absolute;
 	left: -197px;
-	top: -111px;
+	top: -110px;
+}
+
+.top__promo-possibilities-item:nth-child(2) {
+	position: relative;
+	left: -7px;
 }
 
 .top__promo-possibilities-title {
-	margin: 0 0 9px 0;
+	margin: 0 0 10px;
 	font-family: 'Poppins Medium', sans-serif;
 	font-size: 25px;
 	line-height: 20px;
 }
 
 .top__promo-possibilities-desc {
-	max-width: 62px;
+	max-width: 65px;
 	width: 100%;
 	line-height: 13px;
 	text-transform: capitalize;
 	color: #e7e0e0;
+	letter-spacing: .3px;
 }
 
 /* ====END-section-top__promo==== */
 /* ====top__footer==== */
 .logos__list {
+	position: relative;
+	left: 3px;
 	margin: 0 auto;
 	max-width: 560px;
 	width: 100%;
@@ -300,12 +311,13 @@ button {
 }
 
 .programm__title {
-	margin: 0 auto 38px;
+	position: relative;
+	left: 4px;
+	margin: 0 auto 37px;
 	max-width: 343px;
 	width: 100%;
 	line-height: 49px;
 	text-align: center;
-	position: relative;
 }
 
 .programm__title::after {
@@ -315,8 +327,8 @@ button {
 	background: url(../images/main/programm-dumbbell-img.svg) no-repeat;
 	background-size: cover;
 	position: absolute;
-	left: 437px;
-	top: 8px;
+	left: 433px;
+	top: 7px;
 }
 
 .programm__card-list {
@@ -395,6 +407,7 @@ button {
 	text-transform: capitalize;
 	color: #f2f2f2;
 	margin: 0 5px;
+	letter-spacing: .3px;
 }
 
 .programm-card__txt {
@@ -417,7 +430,7 @@ button {
 /* ===END-section-programm=== */
 /* ====promo==== */
 .promo {
-	padding: 0 0 109px 58px;
+	padding: 0 0 108px 58px;
 	max-width: 969px;
 	width: 100%;
 	min-height: 376px;
@@ -428,7 +441,7 @@ button {
 .promo__desc {
 	max-width: 305px;
 	width: 100%;
-	margin: 0 9px 0 0;
+	margin: 0 7px 0 0;
 }
 
 .promo__info-wrp {
@@ -437,7 +450,8 @@ button {
 
 .promo__title {
 	line-height: 42px;
-	margin: 0px 0px 10px 0;
+	margin: 0px 0px 10px;
+	letter-spacing: -0.1px;
 }
 
 .promo__txt {
@@ -454,7 +468,7 @@ button {
 	color: #fff;
 	text-transform: capitalize;
 	position: relative;
-	margin: 0 0 15px 24px;
+	margin: 0 0 15.4px 24px;
 }
 
 .promo__desc-item::before {
@@ -468,14 +482,15 @@ button {
 	max-width: 611px;
 	width: 100%;
 	height: fit-content;
-	padding: 28px 47px 28px 31px;
+	padding: 29px 47px 28px 30px;
 	background: #030712;
 }
 
 .promo__gallery-list {
 	display: grid;
 	grid-template: minmax(50px, 147px) minmax(50px, 147px)/ minmax(147px, 193px) minmax(243px, 300px);
-	grid-gap: 27px;
+	row-gap: 27px;
+	column-gap: 29px;
 }
 
 .promo__gallery-item {
@@ -510,16 +525,17 @@ button {
 /* ====END-promo==== */
 /* ====pricing-plans==== */
 .pricing-plans {
-	max-width: 869px;
+	max-width: 883px;
 	width: 100%;
-	padding: 0 0 104px 11px;
+	padding: 0 0 103px;
 	margin: 0 auto;
 }
 
 .pricing-plans__title {
-	max-width: 269px;
+	max-width: 275px;
+	padding-right: 5px;
 	width: 100%;
-	margin: 0 auto 10px;
+	margin: 0 auto 12px;
 	text-align: center;
 }
 
@@ -527,19 +543,24 @@ button {
 	letter-spacing: .5px;
 	max-width: 415px;
 	width: 100%;
-	margin: 0 auto 44px;
+	margin: 0 auto 42px;
+	padding-left: 11px;
 	line-height: 17px;
 	text-align: center;
 	color: #e7e0e0;
 }
 
+.pricing-plans__list-slider-wrp {
+	padding: 0 0 0 12px;
+}
+
 .pricing-plans__list {
-	max-width: 864px;
+	max-width: 883px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 21px;
+	gap: 24px;
 }
 
 .pricing-plans__item-inner {
@@ -559,6 +580,7 @@ button {
 	margin: 0px 0px 36px;
 	font-weight: 400;
 	font-size: 16px;
+	letter-spacing: .2px;
 	line-height: 18px;
 	text-transform: capitalize;
 	color: #fff;
@@ -602,7 +624,7 @@ button {
 .pricing-plans__positions-item::before {
 	position: absolute;
 	top: -2px;
-	left: -26px;
+	left: -24px;
 }
 
 .pricing-plans__positions-item:not([class*="pricing-plans__positions-item_no-active"])::before {
@@ -648,9 +670,9 @@ button {
 
 .reviews__heading {
 	position: relative;
-	padding: 0 0 37px 5px;
+	padding: 0 0 42px 13px;
 	box-sizing: border-box;
-	max-width: 868px;
+	max-width: 883px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -663,15 +685,18 @@ button {
 	position: absolute;
 	width: 78px;
 	height: 62px;
-	top: 115px;
-	left: 356px;
+	top: 116px;
+	left: 364px;
 	z-index: 9;
 }
 
 .reviews__title {
+	position: relative;
+	top: 5px;
 	max-width: 398px;
 	width: 100%;
-	line-height: 47px;
+	line-height: 44px;
+	letter-spacing: -0.2px;
 }
 
 .reviews__txt {
@@ -694,8 +719,8 @@ button {
 	width: 100%;
 	min-height: 262px;
 	background: #030712;
-	margin: 132px auto 0;
-	padding: 70px 0 46px;
+	margin: 136px auto 0;
+	padding: 73px 0 46px 22px;
 	box-sizing: border-box;
 }
 
@@ -703,25 +728,27 @@ button {
 .subscription::after {
 	position: absolute;
 	content: '';
-	width: 43px;
-	height: 21px;
+	width: 45px;
+	height: 22px;
 	background: url(../images/main/reviews-slider/squares.png) no-repeat center / cover;
 }
 
 .subscription::before {
 	bottom: 0px;
-	left: 75px;
+	left: 82px;
 }
 
 .subscription::after {
 	top: 0px;
-	right: 77px;
+	right: 72px;
 }
 
 .subscription__title {
 	position: relative;
+	left: -11px;
 	line-height: 20px;
-	margin: 0 0 21px 0;
+	letter-spacing: -0.1px;
+	margin: 0 0 20px;
 }
 
 .subscription__title::after {
@@ -730,20 +757,24 @@ button {
 	width: 102px;
 	height: 95px;
 	background: url(../images/main/subscription-star.svg) no-repeat center / contain;
-	top: -22px;
-	right: -158px;
+	top: -24px;
+	right: -165px;
 }
 
 .subscription__txt {
+	position: relative;
+	left: -4px;
 	max-width: 376px;
 	width: 100%;
-	line-height: 18px;
+	line-height: 17px;
 	text-align: center;
 	letter-spacing: .5px;
 	margin: 0 0 28px 0;
 }
 
 .subscription__form {
+	position: relative;
+	left: -8px;
 	max-width: 372px;
 	width: 100%;
 	display: flex;
@@ -756,11 +787,11 @@ button {
 	max-width: 266px;
 	width: 100%;
 	outline: none;
-	padding: 0 5px 0 16px;
+	padding: 2px 16px 0 16px;
 	border: .7px solid #9dad9a;
 	border-radius: 2px;
 	box-sizing: border-box;
-	height: 36px;
+	height: 38px;
 	background: transparent;
 	transition: .5s;
 	color: #5aba4a;
@@ -784,13 +815,14 @@ button {
 }
 
 .subscription__form-btn {
-	padding: 8.17px 15.69px 8.17px 15px;
+	padding: 9.17px 15.65px 8.17px 14.97px;
 	box-sizing: border-box;
 	border: .7px solid #5aba4a;
 	border-radius: 2px;
 	font-family: "Poppins Medium", sans-serif;
 	font-size: 13px;
-	line-height: 20px;
+	line-height: 18.98px;
+	letter-spacing: .1px;
 	text-transform: capitalize;
 	text-align: center;
 	color: #edeef1;
@@ -807,7 +839,7 @@ button {
 	width: 100%;
 	min-height: 213px;
 	margin: 0 auto;
-	padding: 40px 0 43px 3px;
+	padding: 41px 0 43px 7px;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: space-between;
@@ -882,7 +914,7 @@ button {
 }
 
 .footer__nav {
-	margin: 5px 52px 0 0;
+	margin: 5px 45px 0 0;
 	max-width: 531px;
 	width: 100%;
 	min-height: 115px;
@@ -1157,7 +1189,7 @@ button {
 	}
 
 	.subscription__title::after {
-		right: -100px;
+		right: -90px;
 	}
 
 	.footer {
@@ -1168,7 +1200,6 @@ button {
 
 @media(max-width:565px) {
 	.top {
-		/* background: linear-gradient(179deg, #04040C -9.42%, #01050D -9.42%, #01040A 8.93%, #01050D 15.96%, #191E25 55.51%, #1C2C40 85.83%, #232F3F 95.71%, #141B2C 112.17%); */
 		padding: 23px 0 30px;
 	}
 

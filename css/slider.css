@@ -3,7 +3,6 @@
 	max-width: 969px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 0 3px 80px;
 	box-sizing: border-box;
 	max-width: 969px;
 	width: 100%;
@@ -12,13 +11,17 @@
 	box-shadow: 8px 8px 41px 0px rgba(23, 23, 23, 0.25);
 }
 
+.reviews__slider-wrp .center {
+	padding: 0 80px;
+}
+
 .reviews__slider-wrp::before {
 	position: absolute;
 	content: '';
 	background: url(../images/main/reviews-slider/dumbbell-shaker.svg) no-repeat center / contain;
 	width: 74px;
 	height: 73px;
-	top: 32px;
+	top: 34px;
 	right: 80px;
 	z-index: 9;
 }
@@ -29,7 +32,7 @@
 	position: absolute;
 	width: 45px;
 	height: 22px;
-	bottom: 0px;
+	bottom: -4px;
 	left: 63px;
 	z-index: 9;
 }
@@ -92,8 +95,8 @@
 	width: 100%;
 	min-height: 460px;
 	background: url(../images/main/reviews-slider/client-photo.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
 	background-position: center;
 }
 
@@ -110,7 +113,7 @@
 	line-height: 19px;
 	text-transform: capitalize;
 	color: #fff;
-	margin: 0px 0px 2px;
+	margin: 0px 0px 3px;
 }
 
 .slider__line-item-who {
@@ -154,6 +157,10 @@
 }
 
 @media(max-width:767px) {
+	.reviews__slider-wrp .center {
+		padding: 0 50px;
+	}
+
 	.reviews__slider-wrp::before {
 		width: 60px;
 		right: 40px;
@@ -173,15 +180,20 @@
 	}
 
 	.slider-buttons {
-		left: 10%;
-		top: 90%;
+		left: 15%;
+		top: 80%;
 	}
 }
 
 @media(max-width:565px) {
+
 	.reviews__slider-wrp {
-		padding: 20px 20px 20px 40px;
+		padding: 10px 0;
 		min-height: 300px;
+	}
+
+	.reviews__slider-wrp .center {
+		padding: 0 25px;
 	}
 
 	.reviews__slider-wrp::before {
@@ -198,13 +210,13 @@
 	}
 
 	.slider-buttons {
-		top: 80%;
+		left: 10%;
 	}
 }
 
 @media(max-width:420px) {
-	.reviews__slider-wrp {
-		padding: 10px 0 0 10px;
+	.reviews__slider-wrp .center {
+		padding: 0 15px;
 	}
 
 	.reviews__slider-wrp::after {
@@ -212,7 +224,7 @@
 	}
 }
 
-@media(max-width:350px) {
+@media(max-width:375px) {
 	.slider__line-item {
 		flex-direction: column;
 	}
@@ -233,7 +245,8 @@
 	}
 
 	.slider-buttons {
-		top: 43%;
-		left: 33%;
+		top: 46%;
+		left: 0;
+		max-width: 100%;
 	}
 }
