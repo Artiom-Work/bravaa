@@ -744,8 +744,10 @@ button {
 }
 
 .subscription__title {
+	max-width: 380px;
+	width: 100%;
 	position: relative;
-	left: -11px;
+	left: -6px;
 	line-height: 20px;
 	letter-spacing: -0.1px;
 	margin: 0 0 20px;
@@ -758,7 +760,7 @@ button {
 	height: 95px;
 	background: url(../images/main/subscription-star.svg) no-repeat center / contain;
 	top: -24px;
-	right: -165px;
+	right: -151px;
 }
 
 .subscription__txt {
@@ -934,6 +936,7 @@ button {
 
 .footer__nav-item {
 	margin: 0 0 6.81px 0;
+	max-width: 130px;
 }
 
 .footer__nav-link {
